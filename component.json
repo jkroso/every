@@ -1,0 +1,16 @@
+{
+  "name": "every",
+  "repo": "jkroso/every",
+  "description": "assert that every item in an object passes an assertion",
+  "version": "0.1.0",
+  "keywords": ["every","array","object","predicate","assert","test","all","none"],
+  "dependencies": {
+
+  },
+  "main": "src/index.js",
+  "scripts": [
+	  "src/index.js"
+  ],
+  "styles":[],
+  "license": "MIT"
+}
