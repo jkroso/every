@@ -5,8 +5,12 @@ var chai = require('./chai')
   , Result = require('result')
   , every = require('..')
 
-function yes(){ return true }
-function no(){ return false }
+function isNumber(n){
+	return typeof n == 'number'
+}
+function notNumber(n){
+	return typeof n != 'number'
+}
 
 function delay(value){
 	var result = new Result
@@ -30,13 +34,13 @@ describe('every', function () {
 	})
 
 	it('should return true if all items pass', function () {
-		every(array, yes).should.be.true
-		every(object, yes).should.be.true
+		every(array, isNumber).should.be.true
+		every(object, isNumber).should.be.true
 	})
 
 	it('should return false if all items fail', function () {
-		every(array, no).should.be.false
-		every(object, no).should.be.false
+		every(array, notNumber).should.be.false
+		every(object, notNumber).should.be.false
 	})
 
 	it('should return false if one item fails', function () {
@@ -90,5 +94,9 @@ describe('every/async', function () {
 			async(array, maybeError).then(isTrue),
 			async(object, maybeError).then(isTrue)
 		).then(null, function(){ done() })
+	})
+
+	it('should handle Results as parameters', function(done){
+		async(delay([1,2,3]), isNumber).then(isTrue).node(done)
 	})
 })
