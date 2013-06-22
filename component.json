@@ -15,7 +15,8 @@
   ],
   "dependencies": {
     "jkroso/forEach": "0.8.2",
-    "jkroso/result-type": "1.0.0"
+    "jkroso/result-type": "1.0.0",
+    "jkroso/when": "3.1.3"
   },
   "development": {
     "jkroso/result": "0.2.0",
