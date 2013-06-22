@@ -2,15 +2,32 @@
   "name": "every",
   "repo": "jkroso/every",
   "description": "assert that every item in an object passes an assertion",
-  "version": "0.1.0",
-  "keywords": ["every","array","object","predicate","assert","test","all","none"],
-  "dependencies": {
-
-  },
-  "main": "src/index.js",
-  "scripts": [
-	  "src/index.js"
+  "version": "0.2.0",
+  "keywords": [
+    "every",
+    "array",
+    "object",
+    "predicate",
+    "assert",
+    "test",
+    "all",
+    "none"
   ],
-  "styles":[],
+  "dependencies": {
+    "jkroso/forEach": "0.8.2",
+    "jkroso/result-type": "1.0.0"
+  },
+  "development": {
+    "jkroso/result": "0.2.0",
+    "jkroso/serve": "1.4.1",
+    "visionmedia/mocha": "1.11.0",
+    "chaijs/chai": "1.7.0",
+    "jkroso/when-all": "0.4.1"
+  },
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "async.js"
+  ],
   "license": "MIT"
 }

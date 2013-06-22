@@ -12,7 +12,7 @@ module.exports = function(obj, pred, ctx){
 	if (obj == null) return true
 	var len = obj.length
 	// array
-	if (len === +len) {
+	if (typeof len == 'number') {
 		var k = 0
 		while (k < len) {
 			if (!pred.call(ctx, obj[k], k++)) return false

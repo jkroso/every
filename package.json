@@ -1,20 +1,13 @@
 {
   "name": "every",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "assert that every item in an object passes an assertion",
   "dependencies": {
-    "laissez-faire": "~0.12.1",
-    "when": "https://github.com/jkroso/when/archive/1.0.0.tar.gz"
-  },
-  "devDependencies": {
-    "mocha": "~1.9.0",
-    "chai": "~1.5.0",
-    "bigfile": "~0.3.3",
-    "sourcegraph": "~0.6.4",
-    "when-all": "~0.2.2"
+    "foreach": "http://github.com/jkroso/forEach/tarball/0.8.2",
+    "result-type": "1.0.0"
   },
   "scripts": {
-    "test": "make test"
+    "install": "npm dedupe"
   },
   "repository": {
     "type": "git",
