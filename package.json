@@ -1,10 +1,10 @@
 {
   "name": "every",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "assert that every item in an object passes an assertion",
   "dependencies": {
-    "foreach": "http://github.com/jkroso/forEach/tarball/0.8.3",
-    "when": "http://github.com/jkroso/when/tarball/3.2.0",
+    "foreach": "http://github.com/jkroso/forEach/tarball/0.8.4",
+    "when": "http://github.com/jkroso/when/tarball/3.2.1",
     "result-type": "1.0.0"
   },
   "scripts": {
@@ -19,13 +19,8 @@
   },
   "keywords": [
     "every",
-    "array",
-    "object",
     "predicate",
-    "assert",
-    "test",
-    "all",
-    "none"
+    "assert"
   ],
   "author": "Jake Rosoman",
   "license": "MIT"
