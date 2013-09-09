@@ -2,16 +2,15 @@
   "name": "every",
   "repo": "jkroso/every",
   "description": "assert that every item in an object passes an assertion",
-  "version": "0.2.3",
   "keywords": [
     "every",
     "predicate",
     "assert"
   ],
   "dependencies": {
-    "jkroso/forEach": "0.8.5",
     "jkroso/result-type": "1.0.0",
-    "jkroso/when": "3.2.4"
+    "jkroso/lift-result": "0.1.1",
+    "jkroso/forEach": "0.8.7"
   },
   "scripts": [
     "index.js",

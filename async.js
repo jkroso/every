@@ -1,10 +1,7 @@
 
 var each = require('foreach/async').plain
-  , ResultType = require('result-type')
-  , decorate = require('when/decorate')
-
-module.exports = decorate(parallelEvery)
-module.exports.plain = parallelEvery
+var ResultType = require('result-type')
+var lift = require('lift-result')
 
 /**
  * assert `pred` on every key value pair of `obj`
@@ -15,7 +12,7 @@ module.exports.plain = parallelEvery
  * @return {Result} Boolean
  */
 
-function parallelEvery(obj, pred, ctx){
+module.exports = lift(function(obj, pred, ctx){
 	if (obj == null) return true
 	var res = true
 	return each(obj, function(value, key){
@@ -29,4 +26,4 @@ function parallelEvery(obj, pred, ctx){
 	function assert(value){
 		if (!value) res = false
 	}
-}
+})

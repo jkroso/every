@@ -1,9 +1,9 @@
 
+var both = require('when-all').args
+var async = require('../async')
+var Result = require('result')
 var chai = require('./chai')
-  , both = require('when-all').args
-  , async = require('../async')
-  , Result = require('result')
-  , every = require('..')
+var every = require('..')
 
 function isNumber(n){
 	return typeof n == 'number'
